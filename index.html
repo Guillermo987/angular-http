@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head title="http-app">
+  <script data-require="angularjs@1.5.2" data-semver="1.5.2" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+
+<body ng-controller="MainController">
+  <h1>{{message}}</h1>
+
+  <div>{{ error }}</div>
+  <div>
+    <div>Name: {{user.name}}</div>
+    <div>Location: {{user.location}}</div>
+    <div>
+      <img ng-src="{{user.avatar_url}}" title="{{user.name}}">
+    </div>
+  </div>
+</body>
+
+</html>
